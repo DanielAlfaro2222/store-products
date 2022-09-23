@@ -1,0 +1,7 @@
+<section *ngFor="let categoria of categoriesWithProducts">
+    <h2>{{ categoria.title }}</h2>
+
+    <div>
+        <app-product *ngFor="let producto of categoria.products" [product]="producto"></app-product>
+    </div>
+</section>

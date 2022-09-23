@@ -1,0 +1,9 @@
+<nav>
+    <ul>
+        <li *ngFor="let categoria of categorias">
+            <a [routerLink]="['/category/', categoria ]" routerLinkActive="active">
+                {{  categoria  }}
+            </a>
+        </li>
+    </ul>
+</nav>
